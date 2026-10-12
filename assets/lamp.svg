@@ -1,0 +1,42 @@
+<svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-label="Lampu hemat energi" role="img">
+  <defs>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 150) rotate(90) scale(170 170)">
+      <stop offset="0" stop-color="#EAF6A0"/>
+      <stop offset="0.62" stop-color="#D9ED68" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#D9ED68" stop-opacity="0.25"/>
+    </radialGradient>
+  </defs>
+
+  <g>
+    <circle cx="210" cy="160" r="150" fill="url(#halo)"/>
+
+    <g stroke="#A9BD39" stroke-width="3.5" stroke-linecap="round" opacity="0.9">
+      <line x1="210" y1="35" x2="210" y2="87"/>
+      <line x1="122" y1="60" x2="146" y2="96" transform="rotate(-27 122 60)"/>
+      <line x1="298" y1="60" x2="274" y2="96" transform="rotate(27 298 60)"/>
+      <line x1="80" y1="128" x2="118" y2="147" transform="rotate(-56 80 128)"/>
+      <line x1="340" y1="128" x2="302" y2="147" transform="rotate(56 340 128)"/>
+      <line x1="90" y1="232" x2="126" y2="216" transform="rotate(-116 90 232)"/>
+      <line x1="330" y1="232" x2="294" y2="216" transform="rotate(116 330 232)"/>
+      <line x1="210" y1="300" x2="210" y2="258"/>
+    </g>
+
+    <g>
+      <ellipse cx="210" cy="194" rx="118" ry="134" fill="#FFF9DF" stroke="#1F2D24" stroke-width="6"/>
+      <path d="M170 194C170 150 186 126 210 126C234 126 250 150 250 194V224C250 263 233 286 210 286C187 286 170 263 170 224V194Z" fill="#FFF9DF"/>
+
+      <path d="M178 220C178 190 192 174 210 174C228 174 242 190 242 220V237C242 251 229 262 210 262C191 262 178 251 178 237V220Z" fill="#FFF9DF"/>
+
+      <path d="M185 223C191 205 198 195 210 195C222 195 229 205 235 223" stroke="#C58A1F" stroke-width="7" stroke-linecap="round"/>
+      <path d="M183 231C175 245 175 256 183 265C191 275 200 280 210 280C220 280 229 275 237 265C245 256 245 245 237 231" stroke="#C58A1F" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M202 198V278" stroke="#C58A1F" stroke-width="7" stroke-linecap="round"/>
+      <path d="M218 198V278" stroke="#C58A1F" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <g>
+      <rect x="177" y="292" width="66" height="12" rx="5" fill="#1F2D24"/>
+      <rect x="166" y="302" width="88" height="12" rx="5" fill="#1F2D24"/>
+      <rect x="153" y="314" width="114" height="12" rx="5" fill="#1F2D24"/>
+    </g>
+  </g>
+</svg>
