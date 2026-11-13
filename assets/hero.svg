@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="t" xmlns:c2pa="http://c2pa.org/manifest">
+  <title id="t">Ruang kelas hemat energi: cahaya matahari dari jendela, lampu dan saklar mati, colokan dilepas, serta tanaman</title>
+  <defs>
+    <clipPath id="glass"><rect x="82" y="90" width="206" height="250"/></clipPath>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7b8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff7b8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- latar -->
+  <rect width="640" height="480" fill="#eef2d2"/>
+  <circle cx="200" cy="190" r="175" fill="#d9ed68" opacity="0.45"/>
+
+  <!-- lantai -->
+  <rect y="400" width="640" height="80" fill="#dcefb0"/>
+  <line x1="0" y1="400" x2="640" y2="400" stroke="#b4cf8f" stroke-width="3"/>
+
+  <!-- berkas cahaya matahari -->
+  <polygon points="288,100 288,340 420,480 600,400" fill="url(#beam)"/>
+
+  <!-- jendela -->
+  <rect x="70" y="78" width="230" height="274" rx="10" fill="#fffbd4" stroke="#1f2d24" stroke-width="8"/>
+  <g clip-path="url(#glass)">
+    <rect x="82" y="90" width="206" height="250" fill="#fffbd4"/>
+    <path d="M82 300 C130 260 180 290 230 270 C260 260 275 275 288 280 L288 340 L82 340 Z" fill="#a9bd39"/>
+    <path d="M82 325 C140 295 200 320 288 300 L288 340 L82 340 Z" fill="#7c971e"/>
+  </g>
+  <circle cx="135" cy="165" r="26" fill="#f5c93a" stroke="#d4a323" stroke-width="6"/>
+  <g stroke="#d4a323" stroke-width="6" stroke-linecap="round">
+      <line x1="169.0" y1="165.0" x2="181.0" y2="165.0"/>
+      <line x1="159.0" y1="189.0" x2="167.5" y2="197.5"/>
+      <line x1="135.0" y1="199.0" x2="135.0" y2="211.0"/>
+      <line x1="111.0" y1="189.0" x2="102.5" y2="197.5"/>
+      <line x1="101.0" y1="165.0" x2="89.0" y2="165.0"/>
+      <line x1="111.0" y1="141.0" x2="102.5" y2="132.5"/>
+      <line x1="135.0" y1="131.0" x2="135.0" y2="119.0"/>
+      <line x1="159.0" y1="141.0" x2="167.5" y2="132.5"/>
+  </g>
+  <line x1="185" y1="90" x2="185" y2="340" stroke="#1f2d24" stroke-width="6"/>
+  <rect x="58" y="350" width="254" height="16" rx="8" fill="#1f2d24"/>
+
+  <!-- lampu gantung (mati) -->
+  <line x1="470" y1="0" x2="470" y2="112" stroke="#1f2d24" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="470" cy="170" r="19" fill="#e4e8d8" stroke="#1f2d24" stroke-width="5"/>
+  <path d="M428 168 L450 112 L490 112 L512 168 Z" fill="#cdd6bf" stroke="#1f2d24" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- saklar (posisi mati) + tunas -->
+  <rect x="420" y="250" width="76" height="116" rx="12" fill="#fff" stroke="#1f2d24" stroke-width="6"/>
+  <rect x="445" y="272" width="26" height="72" rx="8" fill="#dfe5dc" stroke="#1f2d24" stroke-width="4"/>
+  <rect x="449" y="308" width="18" height="32" rx="6" fill="#1f2d24"/>
+  <path d="M458 250 L458 232" stroke="#4f6b14" stroke-width="5" stroke-linecap="round"/>
+  <path d="M458 238 C440 236 436 222 442 213 C456 215 462 226 458 238 Z" fill="#a9bd39" stroke="#4f6b14" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M458 234 C474 232 480 220 474 210 C462 212 456 222 458 234 Z" fill="#7c971e" stroke="#4f6b14" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- stop kontak + colokan terlepas -->
+  <rect x="530" y="288" width="70" height="70" rx="12" fill="#fff" stroke="#1f2d24" stroke-width="6"/>
+  <rect x="551" y="311" width="7" height="24" rx="3" fill="#1f2d24"/>
+  <rect x="572" y="311" width="7" height="24" rx="3" fill="#1f2d24"/>
+  <path d="M520 436 C484 436 470 468 418 458" fill="none" stroke="#1f2d24" stroke-width="6" stroke-linecap="round"/>
+  <rect x="390" y="442" width="30" height="24" rx="6" fill="#fff" stroke="#1f2d24" stroke-width="5"/>
+  <rect x="375" y="447" width="16" height="5" rx="2" fill="#1f2d24"/>
+  <rect x="375" y="457" width="16" height="5" rx="2" fill="#1f2d24"/>
+
+  <!-- tanaman -->
+  <polygon points="320,410 360,410 354,460 326,460" fill="#fff" stroke="#1f2d24" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="314" y="402" width="52" height="10" rx="5" fill="#1f2d24"/>
+  <path d="M340 402 L340 376" stroke="#4f6b14" stroke-width="5" stroke-linecap="round"/>
+  <path d="M340 382 C320 380 316 366 322 357 C336 359 342 370 340 382 Z" fill="#a9bd39" stroke="#4f6b14" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M340 378 C358 376 364 364 358 354 C346 356 340 366 340 378 Z" fill="#7c971e" stroke="#4f6b14" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M340 370 C332 356 336 346 340 340 C344 346 348 356 340 370 Z" fill="#d9ed68" stroke="#4f6b14" stroke-width="4" stroke-linejoin="round"/>
+</svg>
