@@ -56,17 +56,14 @@ document.querySelectorAll('.brand[href="#beranda"], .back-top[href="#beranda"]')
 });
 
 const revealTargets = document.querySelectorAll(
-	'.about-copy, .about-visual, .about-point, .action-heading, .action-item, .chart-section .container > *, .footer-main, .footer-bottom'
+	'.hero-copy, .hero-visual, .about-copy, .about-visual, .about-point, .action-heading, .action-item, .chart-section .container > *, .footer-main, .footer-bottom'
 );
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if ('IntersectionObserver' in window && !prefersReducedMotion) {
-	const revealObserver = new IntersectionObserver((entries, observer) => {
+	const revealObserver = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add('is-visible');
-				observer.unobserve(entry.target);
-			}
+			entry.target.classList.toggle('is-visible', entry.isIntersecting);
 		});
 	}, { threshold: 0.12, rootMargin: '0px 0px -24px 0px' });
 
