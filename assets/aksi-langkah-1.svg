@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edf6ea"/>
+      <stop offset="100%" stop-color="#d8ebce"/>
+    </linearGradient>
+    <linearGradient id="switchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2ece0"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#173c2c" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="240" rx="16" fill="url(#bgGrad1)"/>
+  
+  <!-- Subtle decorative ambient elements -->
+  <circle cx="80" cy="50" r="45" fill="#cbe4be" opacity="0.35"/>
+  <circle cx="330" cy="190" r="55" fill="#b9dcab" opacity="0.4"/>
+  <circle cx="340" cy="60" r="25" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Classroom Wall / Board Outline -->
+  <rect x="50" y="30" width="300" height="180" rx="14" fill="#ffffff" opacity="0.85" filter="url(#shadow1)"/>
+  
+  <!-- Wall Light Switch (Primary Illustration) -->
+  <g transform="translate(100, 52)">
+    <!-- Switch plate -->
+    <rect x="0" y="0" width="76" height="110" rx="12" fill="url(#switchGrad)" stroke="#c2dac0" stroke-width="2"/>
+    <circle cx="38" cy="14" r="3" fill="#8ca78a"/>
+    <circle cx="38" cy="96" r="3" fill="#8ca78a"/>
+    <!-- Switch rocker (Position: OFF / Down) -->
+    <rect x="18" y="32" width="40" height="46" rx="6" fill="#f4f8f3" stroke="#b0cbb0" stroke-width="1.5"/>
+    <rect x="22" y="52" width="32" height="22" rx="4" fill="#2f7654"/>
+    <text x="38" y="67" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">OFF</text>
+  </g>
+
+  <!-- Eco Bulb & Off indicator -->
+  <g transform="translate(210, 50)">
+    <!-- Bulb socket -->
+    <rect x="36" y="86" width="24" height="8" rx="2" fill="#899e87"/>
+    <rect x="40" y="94" width="16" height="6" rx="2" fill="#697f67"/>
+    <!-- Bulb glass -->
+    <path d="M48,15 C28,15 15,30 15,50 C15,64 25,74 34,86 L62,86 C71,74 81,64 81,50 C81,30 68,15 48,15 Z" fill="#eaf3e8" stroke="#2f7654" stroke-width="2.5"/>
+    <!-- Leaf motif inside bulb -->
+    <path d="M48,32 C40,42 40,62 48,72 C56,62 56,42 48,32 Z" fill="#7ba372" opacity="0.6"/>
+    <path d="M48,38 L48,68" stroke="#2f7654" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Power pulse circle / Zzz sleepy badge -->
+    <circle cx="86" cy="28" r="16" fill="#2f7654"/>
+    <path d="M80 25 L88 25 L82 32 L90 32" stroke="#d7ed86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Bottom status pill -->
+  <g transform="translate(110, 178)">
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="#20583d"/>
+    <circle cx="16" cy="13" r="5" fill="#d7ed86"/>
+    <text x="96" y="17" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Saklar &amp; AC: Padam Saat Kosong</text>
+  </g>
+</svg>

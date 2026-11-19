@@ -56,7 +56,7 @@ document.querySelectorAll('.brand[href="#beranda"], .back-top[href="#beranda"]')
 });
 
 const revealTargets = document.querySelectorAll(
-	'.hero-copy, .hero-visual, .about-copy, .about-visual, .about-point, .action-heading, .action-item, .chart-section .container > *, .footer-main, .footer-bottom'
+	'.hero-copy, .hero-visual, .about-copy, .about-visual, .about-point, .action-heading, .action-item, .recom-card, .action-step-card, .action-cta-card, .data-summary-card, .chart-section .container > *, .footer-main, .footer-bottom'
 );
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -72,3 +72,4 @@ if ('IntersectionObserver' in window && !prefersReducedMotion) {
 		revealObserver.observe(target);
 	});
 }
+

@@ -85,35 +85,54 @@ if (canvas) {
 		});
 	}
 
+	function renderData(data) {
+		const kategori = data.ringkasan.kategori;
+		const urutan = ["Sangat Baik", "Baik", "Cukup", "Kurang"];
+		labels = urutan.filter((k) => k in kategori);
+		nilai = labels.map((k) => kategori[k]);
+		total = nilai.reduce((a, b) => a + b, 0);
+		judul = data.meta.judul + " (" + data.meta.jumlah_responden + " responden)";
+
+		buatGrafik("bar");
+
+		tombolTab.forEach((tombol) => {
+			tombol.addEventListener("click", () => {
+				tombolTab.forEach((t) => {
+					t.classList.remove("is-active");
+					t.setAttribute("aria-pressed", "false");
+				});
+				tombol.classList.add("is-active");
+				tombol.setAttribute("aria-pressed", "true");
+				buatGrafik(tombol.dataset.type);
+			});
+		});
+	}
+
+	const FALLBACK_DATA = {
+		meta: {
+			judul: "Hasil Kuesioner Perilaku Hemat Energi Siswa Kelas XI",
+			jumlah_responden: 636
+		},
+		ringkasan: {
+			kategori: {
+				"Sangat Baik": 378,
+				"Baik": 234,
+				"Cukup": 23,
+				"Kurang": 1
+			}
+		}
+	};
+
 	fetch("data/data-perilaku-energi.json")
 		.then((res) => {
 			if (!res.ok) throw new Error("File JSON tidak ditemukan (" + res.status + ")");
 			return res.json();
 		})
 		.then((data) => {
-			const kategori = data.ringkasan.kategori;
-			const urutan = ["Sangat Baik", "Baik", "Cukup", "Kurang"];
-			labels = urutan.filter((k) => k in kategori);
-			nilai = labels.map((k) => kategori[k]);
-			total = nilai.reduce((a, b) => a + b, 0);
-			judul = data.meta.judul + " (" + data.meta.jumlah_responden + " responden)";
-
-			buatGrafik("bar");
-
-			tombolTab.forEach((tombol) => {
-				tombol.addEventListener("click", () => {
-					tombolTab.forEach((t) => {
-						t.classList.remove("is-active");
-						t.setAttribute("aria-pressed", "false");
-					});
-					tombol.classList.add("is-active");
-					tombol.setAttribute("aria-pressed", "true");
-					buatGrafik(tombol.dataset.type);
-				});
-			});
+			renderData(data);
 		})
 		.catch((err) => {
-			console.error(err);
-			canvas.insertAdjacentHTML("afterend", "<p>Data grafik belum bisa dimuat: " + err.message + "</p>");
+			console.warn("Menggunakan data fallback karena pembatasan protokol (CORS/file):", err);
+			renderData(FALLBACK_DATA);
 		});
 }

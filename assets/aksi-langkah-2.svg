@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf3e7"/>
+      <stop offset="100%" stop-color="#fae3cb"/>
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#7c4a16" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="240" rx="16" fill="url(#bgGrad2)"/>
+
+  <!-- Ambient circles -->
+  <circle cx="70" cy="180" r="45" fill="#f5cf9e" opacity="0.35"/>
+  <circle cx="340" cy="50" r="50" fill="#f8d6ab" opacity="0.4"/>
+
+  <!-- Center Card Frame -->
+  <rect x="50" y="30" width="300" height="180" rx="14" fill="#ffffff" opacity="0.88" filter="url(#shadow2)"/>
+
+  <!-- Wall Socket (Kiri) -->
+  <g transform="translate(90, 60)">
+    <rect x="0" y="0" width="80" height="80" rx="16" fill="#f7f5f2" stroke="#d6c6b4" stroke-width="2"/>
+    <circle cx="40" cy="40" r="26" fill="#ffffff" stroke="#c4b09c" stroke-width="1.5"/>
+    <!-- Socket holes -->
+    <circle cx="31" cy="40" r="4" fill="#635142"/>
+    <circle cx="49" cy="40" r="4" fill="#635142"/>
+    <!-- Grounding clips -->
+    <rect x="38" y="18" width="4" height="6" rx="1" fill="#a48f7d"/>
+    <rect x="38" y="56" width="4" height="6" rx="1" fill="#a48f7d"/>
+  </g>
+
+  <!-- Disconnected Plug (Kanan, ditarik keluar dengan aman) -->
+  <g transform="translate(210, 62)">
+    <!-- Plug pins (metal prongs) -->
+    <rect x="-18" y="24" width="20" height="6" rx="2" fill="#c2ab95"/>
+    <rect x="-18" y="44" width="20" height="6" rx="2" fill="#c2ab95"/>
+    <!-- Plug body -->
+    <rect x="0" y="14" width="44" height="46" rx="10" fill="#20583d" stroke="#173c2c" stroke-width="1.5"/>
+    <rect x="36" y="26" width="14" height="22" rx="4" fill="#2f7654"/>
+    <!-- Cable stretching away -->
+    <path d="M48,37 C70,37 75,55 95,50" fill="none" stroke="#20583d" stroke-width="4.5" stroke-linecap="round"/>
+    
+    <!-- Spark / Zero Vampire Load indicator -->
+    <circle cx="8" cy="-5" r="14" fill="#e8832a"/>
+    <text x="8" y="-1" font-family="'DM Sans', sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">&#10005;</text>
+  </g>
+
+  <!-- Battery 100% full icon above socket -->
+  <g transform="translate(190, 40)">
+    <rect x="0" y="0" width="32" height="16" rx="3" fill="#ffffff" stroke="#2f7654" stroke-width="1.5"/>
+    <rect x="32" y="4" width="3" height="8" rx="1" fill="#2f7654"/>
+    <rect x="3" y="3" width="22" height="10" rx="1.5" fill="#2f7654"/>
+  </g>
+
+  <!-- Bottom pill -->
+  <g transform="translate(100, 178)">
+    <rect x="0" y="0" width="200" height="26" rx="13" fill="#8f4f10"/>
+    <circle cx="16" cy="13" r="5" fill="#ffd479"/>
+    <text x="108" y="17" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Cabut Steker: Stop Beban Vampir</text>
+  </g>
+</svg>

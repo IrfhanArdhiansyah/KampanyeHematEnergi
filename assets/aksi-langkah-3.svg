@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#d0ebf5"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffec99"/>
+      <stop offset="100%" stop-color="#ffd43b"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4edfa"/>
+      <stop offset="100%" stop-color="#eff8fd"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#144d63" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="240" rx="16" fill="url(#bgGrad3)"/>
+
+  <!-- Decorative sun rays -->
+  <circle cx="280" cy="50" r="45" fill="#fdedb7" opacity="0.5"/>
+  <circle cx="340" cy="180" r="60" fill="#bee0ee" opacity="0.4"/>
+
+  <!-- Center Frame -->
+  <rect x="50" y="30" width="300" height="180" rx="14" fill="#ffffff" opacity="0.88" filter="url(#shadow3)"/>
+
+  <!-- Window Frame -->
+  <g transform="translate(130, 48)">
+    <!-- Window sill / glass bg -->
+    <rect x="0" y="0" width="140" height="110" rx="10" fill="url(#skyGrad)" stroke="#a6c8d8" stroke-width="2"/>
+    
+    <!-- Warm Sun outside window -->
+    <circle cx="105" cy="30" r="18" fill="url(#sunGrad)"/>
+    <path d="M105,6 L105,0 M105,54 L105,60 M81,30 L75,30 M129,30 L135,30 M88,13 L83,8 M122,47 L127,52 M88,47 L83,52 M122,13 L127,8" stroke="#f59f00" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Soft Cloud -->
+    <path d="M25,40 Q25,32 35,32 Q42,22 55,25 Q65,22 70,32 Q78,32 78,40 Z" fill="#ffffff" opacity="0.85"/>
+
+    <!-- Window panes divider -->
+    <line x1="70" y1="0" x2="70" y2="110" stroke="#ffffff" stroke-width="3"/>
+    <line x1="0" y1="55" x2="140" y2="55" stroke="#ffffff" stroke-width="3"/>
+
+    <!-- Left Curtain pulled open -->
+    <path d="M0,0 C25,10 10,80 5,110 L0,110 Z" fill="#2f7654" opacity="0.9"/>
+    <circle cx="12" cy="55" r="4" fill="#d7ed86"/>
+
+    <!-- Right Curtain pulled open -->
+    <path d="M140,0 C115,10 130,80 135,110 L140,110 Z" fill="#2f7654" opacity="0.9"/>
+    <circle cx="128" cy="55" r="4" fill="#d7ed86"/>
+  </g>
+
+  <!-- Potted plant on left of window sill -->
+  <g transform="translate(85, 100)">
+    <polygon points="12,38 32,38 28,58 16,58" fill="#bc6c25"/>
+    <path d="M22,38 C14,24 8,20 6,12 C16,14 20,24 22,38 Z" fill="#588157"/>
+    <path d="M22,38 C28,22 36,18 40,10 C32,16 26,26 22,38 Z" fill="#3a5a40"/>
+  </g>
+
+  <!-- 0 Watt Free Tag -->
+  <g transform="translate(262, 54)">
+    <rect x="0" y="0" width="56" height="22" rx="11" fill="#2f7654"/>
+    <text x="28" y="15" font-family="'DM Sans', sans-serif" font-size="10" font-weight="800" fill="#d7ed86" text-anchor="middle">0 WATT</text>
+  </g>
+
+  <!-- Bottom pill -->
+  <g transform="translate(100, 178)">
+    <rect x="0" y="0" width="200" height="26" rx="13" fill="#144d63"/>
+    <circle cx="16" cy="13" r="5" fill="#a5d8ff"/>
+    <text x="108" y="17" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Buka Tirai: Terang Alami Matahari</text>
+  </g>
+</svg>

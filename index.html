@@ -1,84 +1,489 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="WEnergy: kampanye sederhana untuk mengajak kita semua menghemat energi setiap hari.">
+	<meta name="description"
+		content="WEnergy: kampanye sederhana untuk mengajak kita semua menghemat energi setiap hari.">
 	<title>WEnergy - Hemat Energi Bersama</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<header class="site-header">
 		<nav class="navbar container" aria-label="Navigasi utama">
-			<a class="brand" href="#beranda" aria-label="WEnergy - beranda"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 17.5h6m-5 3h4m-2-3v-1.1c0-.9.4-1.6 1.2-2.2a6.2 6.2 0 1 0-4.4 0c.8.6 1.2 1.3 1.2 2.2v1.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9.5c1-.8 2-.6 2.7.2m0 0c.6-.4 1.2-.5 1.8-.2m-1.8.2v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-text"><b>WE</b>nergy</span></a>
-			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span><span class="sr-only">Buka menu</span></button>
-			<div class="nav-menu" id="main-menu"><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#aksi">Aksi kita</a><a href="#data">Data</a></div>
+			<a class="brand" href="#beranda" aria-label="WEnergy - beranda"><span class="brand-mark"
+					aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 17.5h6m-5 3h4m-2-3v-1.1c0-.9.4-1.6 1.2-2.2a6.2 6.2 0 1 0-4.4 0c.8.6 1.2 1.3 1.2 2.2v1.1Z"
+							stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M10 9.5c1-.8 2-.6 2.7.2m0 0c.6-.4 1.2-.5 1.8-.2m-1.8.2v2" stroke="currentColor"
+							stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</svg></span><span class="brand-text"><b>WE</b>nergy</span></a>
+			<button class="menu-toggle" type="button" aria-expanded="false"
+				aria-controls="main-menu"><span></span><span></span><span></span><span class="sr-only">Buka
+					menu</span></button>
+			<div class="nav-menu" id="main-menu">
+				<a href="#beranda">Beranda</a>
+				<a href="#tentang">Tentang</a>
+				<a href="#data">Data Survei</a>
+				<a href="#aksi">Rekomendasi & Aksi</a>
+			</div>
 		</nav>
 	</header>
 
 	<main>
+		<!-- =======================================================
+		     HERO SECTION
+		     ======================================================= -->
 		<section class="hero container" id="beranda" aria-labelledby="hero-title">
-			<div class="hero-copy"><p class="eyebrow"><span aria-hidden="true"></span>Gerakan hemat energi bersama</p><h1 id="hero-title">Dari kita,<br><em>untuk bumi.</em></h1><p class="hero-text">WEnergy mengajak kita semua mulai dari kebiasaan kecil di sekolah dan di rumah: matikan lampu saat tidak digunakan dan gunakan energi seperlunya.</p><div class="hero-actions"><a class="button button-primary" href="#aksi">Ikut bergerak <span aria-hidden="true">&#8594;</span></a><a class="button button-secondary" href="#data">Lihat data <span aria-hidden="true">&#8595;</span></a></div></div>
-			<div class="hero-visual"><img src="assets/hero2.png" alt="Ilustrasi ruang kelas hemat energi: cahaya matahari dari jendela, lampu dan saklar dalam keadaan mati, colokan dilepas, dan tanaman"></div>
+			<div class="hero-copy">
+				<p class="eyebrow"><span aria-hidden="true"></span>Gerakan hemat energi bersama</p>
+				<h1 id="hero-title">Dari kita,<br><em>untuk bumi.</em></h1>
+				<p class="hero-text">WEnergy mengajak kita semua mulai dari kebiasaan kecil di sekolah dan di rumah:
+					matikan lampu saat tidak digunakan dan gunakan energi seperlunya.</p>
+				<div class="hero-actions">
+					<a class="button button-primary" href="#aksi">
+						<span>Ikut bergerak</span>
+						<span class="btn-icon" aria-hidden="true">&#8594;</span>
+					</a>
+					<a class="button button-secondary" href="#data">
+						<span>Lihat data</span>
+						<span class="btn-icon" aria-hidden="true">&#8595;</span>
+					</a>
+				</div>
+			</div>
+			<div class="hero-visual">
+				<img src="assets/hero-protect-lamp.jpg"
+					alt="Foto realistis tangan manusia melindungi bola lampu bercahaya hangat dengan tunas tanaman hijau di dalamnya, simbol gerakan hemat energi dan kepedulian lingkungan">
+			</div>
 		</section>
 
+		<!-- =======================================================
+		     FASE 1: TENTANG GERAKAN (EDUKASI DASAR)
+		     ======================================================= -->
 		<section class="about-section" id="tentang" aria-labelledby="about-title">
 			<div class="container about-layout">
 				<div class="about-copy">
 					<p class="eyebrow">Tentang WEnergy</p>
 					<h2 id="about-title">Energi bijak,<br><em>dimulai dari kita.</em></h2>
-					<p>WEnergy (&ldquo;WE&rdquo; berarti kita) mengajak seluruh warga sekolah membangun kebiasaan menggunakan listrik secara bijak. Langkah kecil yang dilakukan bersama bisa menciptakan lingkungan belajar yang lebih nyaman dan berkelanjutan.</p>
-					<a class="about-link" href="#aksi">Lihat langkah sederhana <span aria-hidden="true">&#8594;</span></a>
+					<p>WEnergy (&ldquo;WE&rdquo; berarti kita) mengajak seluruh warga sekolah membangun kebiasaan
+						menggunakan listrik secara bijak. Langkah kecil yang dilakukan bersama bisa menciptakan
+						lingkungan belajar yang lebih nyaman dan berkelanjutan.</p>
+					<a class="about-link" href="#data">Lihat temuan data angket <span
+							aria-hidden="true">&#8594;</span></a>
 				</div>
 				<div class="about-visual">
 					<img src="assets/lamp.svg" alt="Ilustrasi lampu hemat energi">
-					<p class="about-caption"><span aria-hidden="true">&#10003;</span> Satu kebiasaan baik dimulai hari ini</p>
+					<p class="about-caption"><span aria-hidden="true">&#10003;</span> Satu kebiasaan baik dimulai hari
+						ini</p>
 				</div>
 				<div class="about-points">
-					<article class="about-point"><span>01</span><div><h3>Mulai dari aku</h3><p>Biasakan memakai listrik hanya saat diperlukan.</p></div></article>
-					<article class="about-point"><span>02</span><div><h3>Lanjut jadi kita</h3><p>Ajak teman dan warga sekolah ikut peduli.</p></div></article>
-					<article class="about-point"><span>03</span><div><h3>Jaga untuk masa depan</h3><p>Hemat energi berarti ikut menjaga lingkungan.</p></div></article>
+					<article class="about-point"><span>01</span>
+						<div>
+							<h3>Mulai dari aku</h3>
+							<p>Biasakan memakai listrik hanya saat diperlukan.</p>
+						</div>
+					</article>
+					<article class="about-point"><span>02</span>
+						<div>
+							<h3>Lanjut jadi kita</h3>
+							<p>Ajak teman dan warga sekolah ikut peduli.</p>
+						</div>
+					</article>
+					<article class="about-point"><span>03</span>
+						<div>
+							<h3>Jaga untuk masa depan</h3>
+							<p>Hemat energi berarti ikut menjaga lingkungan.</p>
+						</div>
+					</article>
 				</div>
 			</div>
 		</section>
 
-		<section class="action-section container" id="aksi" aria-labelledby="action-title">
-			<div class="action-heading">
-				<p class="eyebrow">Aksi kita</p>
-				<h2 id="action-title">Mulai dari hal<br><em>yang sederhana.</em></h2>
-				<p>Tiga langkah mudah untuk membuat penggunaan energi di sekolah lebih bijak.</p>
-			</div>
-			<div class="action-list">
-				<article class="action-item"><span class="action-number">01</span><div class="action-copy"><h3>Matikan lampu saat ruangan kosong</h3><p>Pastikan lampu sudah dimatikan saat kelas ditinggalkan.</p></div><span class="action-arrow" aria-hidden="true">&#8599;</span></article>
-				<article class="action-item"><span class="action-number">02</span><div class="action-copy"><h3>Cabut perangkat setelah digunakan</h3><p>Hentikan aliran listrik dari charger dan perangkat lain.</p></div><span class="action-arrow" aria-hidden="true">&#8599;</span></article>
-				<article class="action-item"><span class="action-number">03</span><div class="action-copy"><h3>Manfaatkan cahaya matahari</h3><p>Buka jendela agar kelas terang tanpa lampu di siang hari.</p></div><span class="action-arrow" aria-hidden="true">&#8599;</span></article>
-			</div>
-		</section>
-
+		<!-- =======================================================
+		     FASE 2: DATA SURVEI PERILAKU ENERGI (CHART & INSIGHT)
+		     ======================================================= -->
 		<section class="chart-section" id="data" aria-labelledby="chart-title">
 			<div class="container">
-				<p class="eyebrow">Data</p>
+				<p class="eyebrow">Fase 2 &mdash; Data Lapangan</p>
 				<h2 id="chart-title">Perilaku energi kita</h2>
-				<p class="chart-intro">Hasil kuesioner perilaku hemat energi siswa kelas XI.</p>
+				<p class="chart-intro">Hasil kuesioner perilaku hemat energi dari <strong>636 responden siswa kelas
+						XI</strong> (tingkat partisipasi 99.4%). Data ini menjadi dasar penyusunan rekomendasi aksi di
+					Fase 3.</p>
+
 				<div class="chart-tabs" role="group" aria-label="Pilih jenis grafik">
-					<button class="chart-tab is-active" type="button" data-type="bar" aria-pressed="true">Batang</button>
+					<button class="chart-tab is-active" type="button" data-type="bar"
+						aria-pressed="true">Batang</button>
 					<button class="chart-tab" type="button" data-type="doughnut" aria-pressed="false">Donat</button>
-					<button class="chart-tab" type="button" data-type="horizontal" aria-pressed="false">Mendatar</button>
+					<button class="chart-tab" type="button" data-type="horizontal"
+						aria-pressed="false">Mendatar</button>
 				</div>
 				<div class="chart-wrap">
 					<canvas id="energyChart"></canvas>
+				</div>
+
+				<!-- Ringkasan temuan spesifik dari data angket -->
+				<div class="data-summary-grid">
+					<div class="data-summary-card">
+						<span class="data-tag tag-success">&#10003; Modal Kebiasaan Baik</span>
+						<h4>P01 & P06 Tertinggi (3.51 & 3.45)</h4>
+						<p>92% siswa sudah terbiasa mencabut kabel steker/charger dan 98.6% sadar melakukan penghematan
+							dasar harian.</p>
+					</div>
+					<div class="data-summary-card">
+						<span class="data-tag tag-warning">&#9888; Ruang Perbaikan Kritis</span>
+						<h4>P04 & P09 Terendah (Skor 3.22)</h4>
+						<p>13.7% siswa belum membatasi pemakaian laptop/gawai idle, dan 13.2% masih segan menegur rekan
+							sekelas yang boros listrik.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- =======================================================
+		     FASE 3: REKOMENDASI & AJAKAN AKSI BERBASIS DATA
+		     ======================================================= -->
+		<section class="action-section" id="aksi" aria-labelledby="action-title">
+			<div class="container">
+				<div class="action-heading">
+					<p class="eyebrow">Fase 3 &mdash; Rekomendasi &amp; Ajakan Aksi</p>
+					<h2 id="action-title">Dari temuan data,<br><em>menjadi aksi nyata.</em></h2>
+					<p>Setiap rekomendasi di bawah ini berpijak langsung pada temuan angket Fase 2. Bukan sekadar
+						himbauan klise, melainkan solusi spesifik yang dapat langsung diterapkan bersama di kelas dan
+						bengkel.</p>
+				</div>
+
+				<!-- Grid 4 Rekomendasi Berbasis Temuan Data Spesifik -->
+				<div class="recommendations-grid">
+					<!-- Rekomendasi 1 (P09) -->
+					<article class="recom-card">
+						<div class="recom-header">
+							<div class="recom-num-wrap">
+								<span class="recom-num-badge">01</span>
+								<div class="recom-title-group">
+									<span class="recom-kicker">Rekomendasi 01</span>
+									<h3>Program Piket Duta Energi Rombel</h3>
+								</div>
+							</div>
+							<div class="recom-data-pill pill-alert">
+								<span class="pill-dot"></span>
+								<span>P09 &bull; Skor 3.22 (Titik Kritis)</span>
+							</div>
+						</div>
+
+						<div class="recom-blocks">
+							<div class="recom-box box-problem">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#9888;</span>
+									<span>Kebiasaan yang Perlu Diperbaiki:</span>
+								</div>
+								<p>Sebanyak <strong>13.2% (84 siswa)</strong> masih merasa canggung atau takut menegur teman satu kelas saat melihat peralatan listrik dibiarkan menyala di ruang kosong.</p>
+							</div>
+
+							<div class="recom-box box-solution">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#128161;</span>
+									<span>Langkah Hemat Energi yang Disarankan:</span>
+								</div>
+								<p>Bentuk tim <strong>Duta Energi Rombel</strong> bergilir setiap minggu. Mengubah teguran personal menjadi tanggung jawab piket resmi kelas, sehingga mematikan saklar dan AC menjadi budaya wajar tanpa rasa sungkan antar teman.</p>
+							</div>
+						</div>
+
+						<div class="recom-callout">
+							<div class="callout-icon-box" aria-hidden="true">&#128073;</div>
+							<div class="callout-text">
+								<strong>Bentuk Ajakan Nyata:</strong>
+								<span>Buat jadwal piket energi di papan tulis kelas untuk memeriksa ruangan saat bel istirahat berbunyi.</span>
+							</div>
+							<span class="recom-arrow" aria-hidden="true">&#8599;</span>
+						</div>
+					</article>
+
+					<!-- Rekomendasi 2 (P04) -->
+					<article class="recom-card">
+						<div class="recom-header">
+							<div class="recom-num-wrap">
+								<span class="recom-num-badge">02</span>
+								<div class="recom-title-group">
+									<span class="recom-kicker">Rekomendasi 02</span>
+									<h3>Sleep Mode 5 Menit &amp; Stop Charging Overload</h3>
+								</div>
+							</div>
+							<div class="recom-data-pill pill-alert">
+								<span class="pill-dot"></span>
+								<span>P04 &bull; Skor 3.22 (Terendah di PPLG)</span>
+							</div>
+						</div>
+
+						<div class="recom-blocks">
+							<div class="recom-box box-problem">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#9888;</span>
+									<span>Kebiasaan yang Perlu Diperbaiki:</span>
+								</div>
+								<p>Sebanyak <strong>13.7% (87 siswa)</strong> belum membatasi pemakaian laptop/gawai siaga (idle), dengan rerata terendah pada jurusan teknologi (PPLG) yang sering membiarkan laptop menyala terus-menerus.</p>
+							</div>
+
+							<div class="recom-box box-solution">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#128161;</span>
+									<span>Langkah Hemat Energi yang Disarankan:</span>
+								</div>
+								<p>Terapkan aturan <strong>Power Saver</strong>: atur layar otomatis mati setelah 5 menit tanpa interaksi, dan segera cabut charger laptop saat baterai menyentuh 80&ndash;90% untuk memutus beban listrik siaga.</p>
+							</div>
+						</div>
+
+						<div class="recom-callout">
+							<div class="callout-icon-box" aria-hidden="true">&#128073;</div>
+							<div class="callout-text">
+								<strong>Bentuk Ajakan Nyata:</strong>
+								<span>Biasakan menutup layar laptop (*close lid*) saat guru menjelaskan di depan kelas atau saat meninggalkan meja.</span>
+							</div>
+							<span class="recom-arrow" aria-hidden="true">&#8599;</span>
+						</div>
+					</article>
+
+					<!-- Rekomendasi 3 (P07 & P03) -->
+					<article class="recom-card">
+						<div class="recom-header">
+							<div class="recom-num-wrap">
+								<span class="recom-num-badge">03</span>
+								<div class="recom-title-group">
+									<span class="recom-kicker">Rekomendasi 03</span>
+									<h3>Jendela Pagi &amp; Pemadaman 5 Menit Istirahat</h3>
+								</div>
+							</div>
+							<div class="recom-data-pill pill-info">
+								<span class="pill-dot"></span>
+								<span>P07 &bull; Skor 3.36</span>
+							</div>
+						</div>
+
+						<div class="recom-blocks">
+							<div class="recom-box box-problem">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#9888;</span>
+									<span>Kebiasaan yang Perlu Diperbaiki:</span>
+								</div>
+								<p>Sebanyak <strong>10.5% (67 siswa)</strong> jarang membuka tirai/jendela untuk pencahayaan alami, dan <strong>9.4% siswa</strong> mencatat AC/kipas/lampu tetap menyala di ruang kosong saat istirahat.</p>
+							</div>
+
+							<div class="recom-box box-solution">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#128161;</span>
+									<span>Langkah Hemat Energi yang Disarankan:</span>
+								</div>
+								<p>Maksimalkan pencahayaan matahari 100% gratis (0 Watt) dengan membuka tirai di pagi hari. Jalankan protokol <strong>5 Menit Terakhir</strong> sebelum istirahat untuk mematikan pendingin dan lampu.</p>
+							</div>
+						</div>
+
+						<div class="recom-callout">
+							<div class="callout-icon-box" aria-hidden="true">&#128073;</div>
+							<div class="callout-text">
+								<strong>Bentuk Ajakan Nyata:</strong>
+								<span>Buka seluruh tirai jendela sebagai tugas pertama siswa piket pagi sebelum bel masuk berbunyi.</span>
+							</div>
+							<span class="recom-arrow" aria-hidden="true">&#8599;</span>
+						</div>
+					</article>
+
+					<!-- Rekomendasi 4 (P06 & P02) -->
+					<article class="recom-card">
+						<div class="recom-header">
+							<div class="recom-num-wrap">
+								<span class="recom-num-badge">04</span>
+								<div class="recom-title-group">
+									<span class="recom-kicker">Rekomendasi 04</span>
+									<h3>SOP Bebas Vampir Listrik di Bengkel &amp; Lab</h3>
+								</div>
+							</div>
+							<div class="recom-data-pill pill-success">
+								<span class="pill-dot"></span>
+								<span>P06 &bull; Skor 3.45 (Modal Kuat)</span>
+							</div>
+						</div>
+
+						<div class="recom-blocks">
+							<div class="recom-box box-problem">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#9888;</span>
+									<span>Kebiasaan yang Perlu Diperbaiki:</span>
+								</div>
+								<p>Meski 92% siswa sudah sadar mencabut charger pribadi, terminal stopkontak meja praktik di bengkel dan lab komputer masih sering tertinggal dalam kondisi menancap semalaman (*vampire power*).</p>
+							</div>
+
+							<div class="recom-box box-solution">
+								<div class="box-tag">
+									<span class="box-icon" aria-hidden="true">&#128161;</span>
+									<span>Langkah Hemat Energi yang Disarankan:</span>
+								</div>
+								<p>Tingkatkan kesadaran individu menjadi <strong>SOP Baku Penutupan Lab/Bengkel</strong>: matikan saklar terminal utama stopkontak di seluruh meja praktik sebelum pintu ruangan dikunci.</p>
+							</div>
+						</div>
+
+						<div class="recom-callout">
+							<div class="callout-icon-box" aria-hidden="true">&#128073;</div>
+							<div class="callout-text">
+								<strong>Bentuk Ajakan Nyata:</strong>
+								<span>Cabut steker terminal dari stopkontak dinding, bukan sekadar menekan tombol saklar pada alat saja.</span>
+							</div>
+							<span class="recom-arrow" aria-hidden="true">&#8599;</span>
+						</div>
+					</article>
+				</div>
+
+				<!-- ===================================================
+				     AJAKAN AKSI KITA: LANGKAH-LANGKAH AKSI NYATA
+				     =================================================== -->
+				<div class="action-cta-card">
+					<div class="action-cta-header">
+						<span class="cta-kicker">&#10003; Gerakan Bersama WEnergy</span>
+						<h3>Langkah Aksi Nyata Kita</h3>
+						<p>Ikuti 4 langkah sederhana berikut untuk membiasakan perilaku hemat energi di kelas, bengkel, dan lingkungan sekolah setiap hari.</p>
+					</div>
+
+					<div class="action-steps-grid">
+						<!-- Card 1 -->
+						<article class="action-step-card">
+							<div class="step-card-media">
+								<img src="assets/aksi-langkah-1.jpg" alt="Langkah 1: Matikan Saklar Lampu & AC" class="step-card-img" loading="lazy">
+								<span class="step-badge">Langkah 01</span>
+							</div>
+							<div class="step-card-body">
+								<div class="step-card-header">
+									<h4>Matikan Lampu &amp; AC Saat Ruangan Kosong</h4>
+								</div>
+								<p class="step-card-text">
+									Pastikan seluruh saklar lampu dan pendingin udara (AC) dimatikan saat kelas ditinggalkan untuk jam istirahat, olahraga, ibadah, atau saat pulang sekolah.
+								</p>
+								<div class="step-card-action">
+									<span class="step-action-tag">Aksi Nyata:</span>
+									<span>Piket harian memeriksa dan mematikan saklar 5 menit sebelum bel istirahat berbunyi.</span>
+								</div>
+							</div>
+						</article>
+
+						<!-- Card 2 -->
+						<article class="action-step-card">
+							<div class="step-card-media">
+								<img src="assets/aksi-langkah-2.jpg" alt="Langkah 2: Cabut Steker & Stop Beban Vampir" class="step-card-img" loading="lazy">
+								<span class="step-badge">Langkah 02</span>
+							</div>
+							<div class="step-card-body">
+								<div class="step-card-header">
+									<h4>Cabut Steker &amp; Hentikan Daya Vampir Listrik</h4>
+								</div>
+								<p class="step-card-text">
+									Cabut charger laptop, HP, proyektor, dan saklar terminal meja praktik setelah selesai dipakai. Daya siaga (standby) tetap menyerap listrik jika dibiarkan menancap.
+								</p>
+								<div class="step-card-action">
+									<span class="step-action-tag">Aksi Nyata:</span>
+									<span>Cabut steker terminal dari dinding di bengkel dan lab komputer sebelum ruangan dikunci.</span>
+								</div>
+							</div>
+						</article>
+
+						<!-- Card 3 -->
+						<article class="action-step-card">
+							<div class="step-card-media">
+								<img src="assets/aksi-langkah-3.jpg" alt="Langkah 3: Buka Jendela & Manfaatkan Cahaya Alami" class="step-card-img" loading="lazy">
+								<span class="step-badge">Langkah 03</span>
+							</div>
+							<div class="step-card-body">
+								<div class="step-card-header">
+									<h4>Buka Tirai Jendela &amp; Maksimalkan Cahaya Alami</h4>
+								</div>
+								<p class="step-card-text">
+									Manfaatkan pencahayaan matahari 100% gratis (0 Watt) di pagi dan siang hari. Buka tirai jendela lebar-lebar dan padamkan lampu baris dekat jendela saat cuaca cerah.
+								</p>
+								<div class="step-card-action">
+									<span class="step-action-tag">Aksi Nyata:</span>
+									<span>Membuka seluruh tirai jendela menjadi tugas pertama siswa piket pagi sebelum pelajaran dimulai.</span>
+								</div>
+							</div>
+						</article>
+
+						<!-- Card 4 -->
+						<article class="action-step-card">
+							<div class="step-card-media">
+								<img src="assets/aksi-langkah-4.jpg" alt="Langkah 4: Energi Bersih & Duta Energi" class="step-card-img" loading="lazy">
+								<span class="step-badge">Langkah 04</span>
+							</div>
+							<div class="step-card-body">
+								<div class="step-card-header">
+									<h4>Dukung Energi Bersih &amp; Aktifkan Duta Energi</h4>
+								</div>
+								<p class="step-card-text">
+									Beralih ke budaya ramah lingkungan dan kenali pemanfaatan energi terbarukan di sekolah. Bentuk jadwal Duta Energi kelas secara bergilir untuk saling mengingatkan dengan santun.
+								</p>
+								<div class="step-card-action">
+									<span class="step-action-tag">Aksi Nyata:</span>
+									<span>Tulis jadwal Duta Energi di papan tulis dan pelopori inisiatif hemat listrik di lingkungan sekolah.</span>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="cta-footer-bar">
+						<div class="cta-footer-text">
+							<strong>Siap menjadi bagian dari perubahan?</strong>
+							<span>Ayo mulai dari ruang kelas dan meja praktik kita sekarang.</span>
+						</div>
+						<div class="cta-footer-actions">
+							<a href="#beranda" class="button button-primary">
+								<span>Mulai Gerakan Ini</span>
+								<span class="btn-icon" aria-hidden="true">&#8593;</span>
+							</a>
+							<a href="#data" class="button button-secondary">
+								<span>Lihat Kembali Data</span>
+								<span class="btn-icon" aria-hidden="true">&#8595;</span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="#beranda"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 17.5h6m-5 3h4m-2-3v-1.1c0-.9.4-1.6 1.2-2.2a6.2 6.2 0 1 0-4.4 0c.8.6 1.2 1.3 1.2 2.2v1.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9.5c1-.8 2-.6 2.7.2m0 0c.6-.4 1.2-.5 1.8-.2m-1.8.2v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-text"><b>WE</b>nergy</span></a><p>Energi untuk kita semua, mulai dari langkah kecil.</p></div><a class="back-top" href="#beranda" aria-label="Kembali ke atas">&#8593;</a></div><div class="container footer-bottom"><span>&copy; 2026 WEnergy</span><span>Gunakan energi dengan bijak.</span></div></footer>
+	<!-- =======================================================
+	     FOOTER
+	     ======================================================= -->
+	<footer class="site-footer">
+		<div class="container footer-main">
+			<div>
+				<a class="brand" href="#beranda">
+					<span class="brand-mark" aria-hidden="true">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9 17.5h6m-5 3h4m-2-3v-1.1c0-.9.4-1.6 1.2-2.2a6.2 6.2 0 1 0-4.4 0c.8.6 1.2 1.3 1.2 2.2v1.1Z"
+								stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M10 9.5c1-.8 2-.6 2.7.2m0 0c.6-.4 1.2-.5 1.8-.2m-1.8.2v2" stroke="currentColor"
+								stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</span>
+					<span class="brand-text"><b>WE</b>nergy</span>
+				</a>
+				<p>Energi untuk kita semua, mulai dari langkah kecil.</p>
+			</div>
+			<a class="back-top" href="#beranda" aria-label="Kembali ke atas">&#8593;</a>
+		</div>
+		<div class="container footer-bottom">
+			<span>&copy; 2026 WEnergy &bull; Proyek Kolaborasi Kampanye Hemat Energi</span>
+			<span>Fase 1, 2, dan 3 Selesai &bull; Gunakan energi dengan bijak.</span>
+		</div>
+	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/grafik.js"></script>
 </body>
+
 </html>
